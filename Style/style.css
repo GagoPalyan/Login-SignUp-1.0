@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgba(244, 0, 255, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+button {
+  cursor: pointer;
+}
+.signUpPage {
+  width: 400px;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 30px 0;
+}
+.loginPage h1,
+.signUpPage h1 {
+  color: white;
+  font-weight: 100;
+}
+.signUpPage form {
+  width: 350px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.signUpPage form .gender {
+  width: 300px;
+  height: 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.signUpPage form .gender label {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 100;
+  font-size: 18px;
+  margin-right: 80px;
+}
+.signUpPage form .gender input {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  opacity: 0.7;
+}
+.loginPage input,
+.signUpPage input {
+  width: 300px;
+  height: 40px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 15px;
+  padding: 0 10px;
+  outline: none;
+  background-color: unset;
+  font-size: 18px;
+  cursor: pointer;
+}
+.loginPage input::placeholder,
+.signUpPage input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+.loginPage .acceptDiv,
+.signUpPage .acceptDiv {
+  width: 300px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.loginPage .acceptDiv #accept,
+.signUpPage .acceptDiv #accept {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+.loginPage .acceptDiv label,
+.signUpPage .acceptDiv label {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 100;
+  font-size: 14px;
+}
+.loginPage .acceptDiv a,
+.signUpPage .acceptDiv a {
+  color: white;
+  font-weight: 100;
+  font-size: 14px;
+}
+.loginPage #loginBtn,
+.signUpPage #signUpBtn {
+  width: 200px;
+  height: 40px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 15px;
+  padding: 0 10px;
+  outline: none;
+  background-color: unset;
+  font-size: 18px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.loginPage #signUpBtn:disabled,
+.signUpPage #signUpBtn:disabled {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.loginPage .LogIn,
+.signUpPage .LogIn {
+  color: white;
+  text-decoration: none;
+}
+
+.loginPage {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 30px 0;
+}
+.loginPage form {
+  width: 350px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.homePage {
+  width: 450px;
+  height: 300px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.homePage h1 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 15px;
+}
+.homePage .personInfoList {
+  width: 420px;
+  height: 170px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.homePage ul {
+  width: 120px;
+  height: 100%;
+  font-size: 18px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  color: white;
+  list-style: none;
+}
+.homePage .info {
+  width: 280px;
+}

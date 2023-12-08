@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style/style.css" />
+    <title>Sing Up</title>
+  </head>
+  <body>
+    <div class="signUpPage">
+      <h1>Sign Up</h1>
+      <form>
+        <input id="name" type="text" placeholder="Name" autofocus required />
+        <input type="text" id="lastName" placeholder="LastName" required />
+        <input
+          id="email"
+          type="text"
+          placeholder="Email or Phone number"
+          required
+        />
+        <div class="gender">
+          <input type="radio" required id="male" name="gender" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" />
+          <label for="female">Female</label>
+        </div>
+        <input
+          id="password"
+          type="password"
+          placeholder="Password"
+          minlength="8"
+          maxlength="16"
+          required
+        />
+        <input
+          id="submitPassword"
+          type="password"
+          placeholder="Submit Password"
+          minlength="8"
+          maxlength="16"
+          required
+        />
+        <div class="acceptDiv">
+          <input name="accept" type="checkbox" required id="accept" />
+          <label for="accept">I agree all statements in  </label
+          ><a href="">Terms of service</a>
+        </div>
+        <button id="signUpBtn">Sign Up</button>
+      </form>
+      <a href="logIn.html" class="LogIn">I have a accout</a>
+    </div>
+    <script src="Script/script.js"></script>
+  </body>
+</html>
