@@ -1,15 +1,14 @@
 const logEmail = document.getElementById("logEmail");
 const logPassword = document.getElementById("logPassword");
 const loginBtn = document.getElementById("loginBtn");
-logEmail.value = "+37477948287";
-logPassword.value = "Gago.777";
 
 let emailRegex = /^(?=.*[a-z])(?=.*[@])(?=.*[.]).{8,}$/;
 let passwordRegex =
   /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*+_.]).{8,}$/;
 let phoneNumRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,6}$/;
 
-loginBtn.addEventListener("click", () => {
+loginBtn.addEventListener("click", (e) => {
+  e.preventDefault();
   emailRegex.test(logEmail.value) || phoneNumRegex.test(logEmail.value)
     ? (logEmail.style.border = "2px solid green")
     : (logEmail.style.border = "2px solid red");
@@ -28,7 +27,7 @@ loginBtn.addEventListener("click", () => {
       ) {
         let logInProfile = JSON.stringify(item);
         localStorage.setItem("logInProfile", logInProfile);
-        loginBtn.setAttribute("href", "./homePage.html");
+        window.location.href = "./homePage.html";
       }
     });
   }

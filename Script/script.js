@@ -25,7 +25,8 @@ let passwordRegex =
   /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*+_.]).{8,}$/;
 let phoneNumRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,6}$/;
 
-signUpBtn.addEventListener("click", () => {
+signUpBtn.addEventListener("click", (e) => {
+  e.preventDefault();
   nameRegex.test(name.value)
     ? (name.style.border = "2px solid green")
     : (name.style.border = "2px solid red");
@@ -70,5 +71,6 @@ signUpBtn.addEventListener("click", () => {
     let personList = JSON.parse(localStorage.getItem("personList"));
     personList.push(profile);
     localStorage.setItem("personList", JSON.stringify(personList));
+    window.location.href = "./login.html";
   }
 });
